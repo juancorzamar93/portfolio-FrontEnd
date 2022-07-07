@@ -1,0 +1,128 @@
+* {
+    font-family: "Asap", sans-serif;
+  }
+  header {
+    background-color: #a0cce0;
+  }
+  
+  .logo_AP h4 {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .banner {
+    /* border: solid white; */
+    width: 100%;
+    max-height: 10%;
+    box-shadow: 0 5px 5px 10px;
+  }
+  
+  .redes_sociales {
+    padding: 15px;
+  }
+  
+  .logo_AP {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logoAP {
+    border-radius: 25%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .perfil {
+    margin-top: -40px;
+    margin-left: 25px;
+    border-radius: 50%;
+    height: 10%;
+    width: 10%;
+    /* display: flex; */
+  }
+  
+  .card_name,
+  .card_position {
+    padding-left: 7px;
+    font-weight: bold;
+  }
+  
+  .acerca_de_mi {
+    border: 5px solid white;
+    background-color: #e6e6e6;
+    margin-left: 2px;
+  }
+  
+  main h2 {
+    margin: 10px;
+    font-weight: bold;
+  }
+  
+  .globant {
+    display: flex;
+    margin-left: 7px;
+  }
+  
+  .globant h6,
+  .ml h6 {
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .globant p,
+  .ml p {
+    margin: 5px;
+  }
+  
+  .ml {
+    display: flex;
+    margin-left: 7px;
+    margin-top: 20px;
+  }
+  
+  #ml {
+    border-radius: 50%;
+  }
+  
+  .utn {
+    display: flex;
+    margin-left: 7px;
+  }
+  
+  .utn h6,
+  .ispc h6 {
+    padding-top: 23px;
+    font-weight: bold;
+    padding-left: 7px;
+  }
+  
+  #utn,
+  #ispc {
+    border-radius: 50%;
+  }
+  
+  .ispc {
+    display: flex;
+    margin-left: 7px;
+    margin-top: 20px;
+  }
+  
+  .utn p,
+  .ispc p {
+    margin: 5px;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+  
+  .proyecto {
+    margin-left: 7px;
+  }
+  
+  .img_biotech {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #biotech {
+    border: 5px solid rgb(197, 209, 31);
+  }
+  
