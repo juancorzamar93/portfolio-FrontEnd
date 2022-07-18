@@ -14,7 +14,8 @@
         <a href="#" class="icon_github"
           ><img src="assets/icons/github.svg" alt=""
         /></a>
-        <button type="button" class="btn btn-warning" (click)="login()">Login</button>
+        <button type="button" class="btn btn-warning" (click)="login()" *ngIf="!isLogged">Login</button>
+        <button type="button" class="btn btn-warning" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
       </nav>
     </div>
   </header>
