@@ -1,23 +1,42 @@
-<h2>Experiencias</h2>
+<div class="row">
+  <h2>Experiencias laborales</h2>
+  <div class="col-lg-2">
+    <button
+      type="button"
+      class="btn btn-info"
+      routerLink="/nuevaexp"
+      *ngIf="isLogged"
+    >
+      Nueva experiencia
+    </button>
+  </div>
 
-  <div class="globant">
-    <img src="assets/img/globant.jpg" alt="" />
-    <h6>Front-end developer</h6>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-      aut veritatis quod corporis quasi asperiores dolores eveniet
-      consectetur beatae excepturi, magni eaque nihil dolor ut aspernatur
-      obcaecati quibusdam doloribus doloremque?
-    </p>
+  <div class="col lg 1"></div>
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Experiencia of expe">
+          <td>
+            <h4>{{ Experiencia.nombreE }}</h4>
+          </td>
+          <td>{{ Experiencia.descripcionE }}</td>
+          <td *ngIf="isLogged">
+            <button
+              class="btn btn-info"
+              routerLink="/editexp/{{ Experiencia.id }}"
+            >
+              <i class="bi bi-pencil-square"></i> EDITAR
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+              <i class="bi bi-trash-fill"></i> BORRAR
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div class="ml">
-    <img src="assets/img/ml.jpg" alt="" id="ml" />
-    <h6>Full Stack developer</h6>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-      aut veritatis quod corporis quasi asperiores dolores eveniet
-      consectetur beatae excepturi, magni eaque nihil dolor ut aspernatur
-      obcaecati quibusdam doloribus doloremque?
-    </p>
-  </div>
-  <br />
+</div>
+
+<br />
